@@ -1,3 +1,4 @@
+# first num greater than second num
 a=20
 b=12
 if a>b:
@@ -89,4 +90,20 @@ print((a**2)>10)
 #square of last digit of given num divisible by 7
 x=47
 last_digit=x%10
-print((last_digit**2)%7==0)    
+print((last_digit**2)%7==0)   
+
+#condition for square of last num divisiblr by 3
+x=16
+last_digit=x%10
+print((last_digit**2)%3==0)
+
+#condition for character an alphabet letter
+ch = input("Enter a character: ")
+if ("A <= ch <= Z") or ("a <= ch <= z"):
+    print("Alphabet")
+else:
+    print("Not an alphabet")
+    
+#num is even
+a=7
+print(a%2==0)
