@@ -52,3 +52,78 @@ else:
 char='e'
 if char in "aeiouAEIOU" :
     print("vowels")
+
+
+#8 condition for the character an upper case letter
+char='H'
+if ('A'<=char<='Z'):
+    print("upper case")
+    
+char='S'
+if char.isupper():
+    print("Upper letter")
+    
+#9 condition for the character is digit 
+num=6
+if 0<=num<=9:
+    print("Digit")
+    
+ch='8'
+if ch.isdigit():
+    print("digit")
+    
+#10 condition for the pin 4 digit long
+num=4560
+if 1000<=num<=9999:
+    print("pin number")
+    
+pin=input("Enter PIN: ")
+if len(pin)==4 and pin.isdigit():
+    print("Valid PIN")
+else:
+    print("Invalid PIN")
+    
+    
+#11 condition for the character an alphabet letter 
+x='8'
+if x.isalpha():
+    print("True")
+else:
+    print("False")
+    
+x='E'
+if ('A'<=x<='Z' or 'a'<=x<='z'):
+    print("alphabets")
+else:
+    print("not an alphabets")
+    
+    
+#12 condition for the character a symbol (non alphanumeric)
+x='@'
+if not x.isalnum():
+    print("symbol")
+else:
+    print("not symbol")
+    
+#13 condition for the all three numbers equal to each other
+a=5
+b=5
+c=5
+if a==b==c:
+    print("all 3 numbers are equal")
+    
+    
+#14condition for the atleast two numbers among the three equal to each other
+num1=6
+num2=9
+num3=6
+if num1==num2 or num2==num3 or num3==num1 :
+    print("At least two number equal")
+    
+#15 condition for the all three numbers different from each other
+a=1
+b=17
+c=19
+if a!=b!=c :
+    print("True")
+
