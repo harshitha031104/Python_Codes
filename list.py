@@ -60,4 +60,59 @@ for animal in animals:
     if animal.startswith("r"):
         print(animal,end=" ")
     
+# 1 Find the sum of all elements in a list.
+num=[10,20,30,40,50]
+print(sum(num))
 
+# 2 Find the maximum and minimum elements in a list.
+num=[12,45,7,89,23]
+print(max(num))
+print(min(num))
+
+# 3 Reverse a list.
+fruits = ["apple", "banana", "mango", "orange"]
+print(fruits[-1:-5:-1])
+
+# 4 Print only the even numbers from a list.
+nums = [2, 5, 8, 11, 14, 17, 20]
+for even_num in nums:
+    if even_num%2==0:
+        print(even_num)
+        
+# 5 Remove duplicate elements from a list.
+numbers = [1, 2, 2, 3, 4, 4, 5]
+unique_num=list(set(numbers))
+print(unique_num)
+
+# using loop
+numbers=[1,2,2,3,4,4,5]
+unique_num=[]
+for num in numbers:
+    if num not in unique_num:
+        unique_num.append(num)
+print(unique_num)
+
+
+# using loop for sum of numbers
+num=[10,20,30,40,50]
+total=0
+for i in num:
+    total=total+i
+print(total)
+
+
+# using loop for max and min
+num=[12,45,7,89,23]
+lar_ele=num[0]
+for i in num:
+    if i>lar_ele:
+        lar_ele=i
+print(lar_ele)
+
+
+num=[12,45,7,89,23]
+sma_ele=num[0]
+for i in num:
+    if i<sma_ele:
+        sma_ele=i
+print(sma_ele)
