@@ -142,3 +142,49 @@ l3.hp()
 l3.lenovo()
 l3.dell()
 print("========laptop3=========")
+
+
+# super variable
+class person:
+    def __init__(self):
+        self.name="Rambabu"
+class customer(person):
+    def __init__(self):
+        super().__init__()
+        self.parent_name=self.name
+        self.name="Harshi"
+    def display(self):
+        print("parent_name:",self.parent_name)
+        print("child name:",self.name)
+c1=customer()
+c1.display()
+
+
+class person:
+    def __init__(self,pid,name):
+        self.pid=pid
+        self.name=name
+class customer(person):
+    def __init__(self,pid,name,age,gender):
+        super().__init__(pid,name)
+        self.age=age
+        self.gender=gender
+    def display(self):
+        print(self.pid,self.name,self.age,self.gender)
+c1=customer(101,"prasad",23,"male")
+c1.display()
+c2=customer(111,"ram",30,"male")
+c2.display()
+
+# super method
+class person:
+    def display(self):
+        print("this is a super class method")
+class customer(person):
+    def display(self):
+        super().display
+        print("This is a sub class method")
+c1=customer()
+c1.display()
+        
+
